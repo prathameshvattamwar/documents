@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(12, 17, 23);
+    color: #fff;
+    user-select: none;
+}
+
+body * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #242530; 
+    border-radius: 6px; 
+}
+
+.cards{
+    padding: 5px 20px;
+    gap: 1.4rem;
+}
+
+.card{
+    min-width: 16rem;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.card img{
+    transition: all ease .3s;
+}
+
+.card img:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.card .card-text{
+    color: gray;
+}
+
+button{
+    position: relative;
+    padding: 10px 20px;
+    outline: none;
+    background-color: rgb(47, 51, 65);
+    transition: all ease-in-out .3s;
+}
+
+button:hover{
+    background-color: rgb(34, 39, 39);
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 5px #000;
+}
+
+button:active{
+    background-color: rgb(15, 17, 17);
+    box-shadow: 0px 0px 5px #1f06ac;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+}
+
+button a:hover{
+    color: #fff;
+}
+
+@media only screen and (max-width:600px) {
+    .heading{
+        font-size: 1.5rem;
+    }
+    .card{
+        width: 100%;
+    }
+    button:active{
+        background-color: rgb(15, 17, 17);
+        box-shadow: 0px 0px 20px #8c00ff;
+    }
+}
